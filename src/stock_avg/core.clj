@@ -77,8 +77,8 @@
 
 (defn is-special-condition [calculated-data]
   (or
-   (> (math/abs (:diff-200 calculated-data)) 0.1)
-   (> (math/abs (:diff-300 calculated-data)) 0.1)))
+   (> (math/abs (:diff-200 calculated-data)) 0.01)
+   (> (math/abs (:diff-300 calculated-data)) 0.01)))
 
 (defn output-header []
   (clojure.string/join
